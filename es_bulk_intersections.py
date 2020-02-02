@@ -34,10 +34,10 @@ def es_bulk_intersections(index_name, intersections, place, bulk_file):
     inputs 
     - index name - ES index name
     - intersections - list of geocoded intersections
-        [
-        {'osmid': 472988808, 'latitude': 43.1707462, 'longitude': -87.8955177, 'streets': {'North Lake Drive', 'East Buttles Place'}}, 
-        {'osmid': 196628902, 'latitude': 43.1709381, 'longitude': -87.8970584, 'streets': {'North Fielding Road', 'East Buttles Place'}}, 
-        {'osmid': 196673178, 'latitude': 43.1709506, 'longitude': -87.8983888, 'streets': {'North Greenvale Road', 'East Buttles Place'}},
+    {'osmid': 472988808, 'latitude': 43.1707462, 'longitude': -87.8955177, 'streets': ['East Buttles Place', 'North Lake Drive']}
+    {'osmid': 196628902, 'latitude': 43.1709381, 'longitude': -87.8970584, 'streets': ['East Buttles Place', 'North Fielding Road']}
+    {'osmid': 196673178, 'latitude': 43.1709506, 'longitude': -87.8983888, 'streets': ['North Greenvale Road', 'East Buttles Place']}
+    {'osmid': 6915412409, 'latitude': 43.1715911, 'longitude': -87.8996654, 'streets': ['East Buttles Place', 'East Buttles Road', 'North Pelham Parkway']}
         ...
     - bulk_file - file path for bulk file output
     

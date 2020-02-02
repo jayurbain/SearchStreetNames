@@ -1,42 +1,44 @@
-# SearchStreetNames
+## SearchStreetNames
 Searchable street names using ElasticSearch and OSMnx python library to identify streets and geocodeable intersections.
 
-## Retrieving geocoded intersections with street names
+### Retrieving geocoded intersections with street names
 
-### First, install the OSMnx python library for interacting with OpenStreetMap networks
-'''
+#### Install the OSMnx python library for interacting with OpenStreetMap networks
+```
 conda config --prepend channels conda-forge
 conda create -n ox --strict-channel-priority osmnx
-'''
+```
 
-Alternatively, install OSMnx via pip within an environment: `pip install osmnx`
+Alternatively, install OSMnx via pip within some environment: `pip install osmnx`
 
 Reference:    
 https://github.com/gboeing/osmnx
 
-At this point you should be able to retrieve a list of dictionaries.
 
-### Retrieving geocoded intersections:   
+### Retrieving geocoded intersections: 
+At this point you should be able to retrieve a list of street intersection dictionaries.
 `road_connections.py` - given a textual query of a geocodeable place return a list of dictionaries with the following information:
-- OSM node id,
+- OSM node id
 - list of streets at node (intersection)
 - latitude of node
 - longitude
 
-The query must be geocodable and OSM must have polygon boundaries for the geocode result.
+```
+python road_connections.py --place "Bayside, Wisconsin"
 
-place = 'Bayside, Wisconsin'
-intersections = road_connections(place)
-print(intersections)
+Found nearest nodes to 176 points in 0.00 seconds
+{'osmid': 472988808, 'latitude': 43.1707462, 'longitude': -87.8955177, 'streets': ['East Buttles Place', 'North Lake Drive']}
+{'osmid': 196628902, 'latitude': 43.1709381, 'longitude': -87.8970584, 'streets': ['East Buttles Place', 'North Fielding Road']}
+{'osmid': 196673178, 'latitude': 43.1709506, 'longitude': -87.8983888, 'streets': ['North Greenvale Road', 'East Buttles Place']}
+{'osmid': 6915412409, 'latitude': 43.1715911, 'longitude': -87.8996654, 'streets': ['East Buttles Place', 'East Buttles Road', 'North Pelham Parkway']}
+...
+```
 
-[
-{'osmid': 472988808, 'latitude': 43.1707462, 'longitude': -87.8955177, 'streets': {'North Lake Drive', 'East Buttles Place'}}, 
-{'osmid': 196628902, 'latitude': 43.1709381, 'longitude': -87.8970584, 'streets': {'North Fielding Road', 'East Buttles Place'}}, 
-{'osmid': 196673178, 'latitude': 43.1709506, 'longitude': -87.8983888, 'streets': {'North Green
+`place` must be geocodable and OSM must have polygon boundaries for the geocode result.
 
-## Indexing intersections with Elastic Search:
+### Indexing intersections with Elastic Search:
 
-### Install and run ElasticSearch
+#### Install and run ElasticSearch
 
 ElasticSearch Setup:
 https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html
@@ -78,11 +80,11 @@ You should see something like the following:
 }
 ```
 
-### Create an ElasticSearch Index  
+#### Create an ElasticSearch Index  
 
 Create the index `intersctions` and define the datatype mappings for the index.
 
-Highly recommend using a tool like Postman to handle complex curl queries:
+Highly recommend using a tool like `Postman` to handle complex curl queries.
 
 ```
 curl -XPUT http://localhost:9200/intersections -d
@@ -226,19 +228,6 @@ You should see something like the following:
   }
 }
 ```
-
-curl -XPUT http://localhost:9200/intersections/_doc/472988808 -d 
-'
-{
-  "location": { 
-    "lat": 43.1707462,
-    "lon": -87.8955177
-  },
-  "streets": ["North Lake Drive", "East Buttles Place"],
-  "place": "Bayside, Wisconsin"
-}
-'
-
 Bulk insert:
 
 Run `es_bulk_intersections` to generate a JSON file of intersections in ES bulk format:
@@ -250,8 +239,6 @@ python es_bulk_intersections.py --index_name='intersections' --place='Bayside, W
 Post the bulk records to ES:
 
 ```
-$ curl -XPOST http://127.0.0.1:9200/intersections/_bulk -H "Content-Type: application/json" --data-binary "@bayside_wi.json"
-
 $ curl -XPOST http://127.0.0.1:9200/intersections/_bulk --data-binary "@bayside_wi.json"
 ```
 
