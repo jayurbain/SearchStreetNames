@@ -248,3 +248,89 @@ $ curl -XGET http://localhost:9200/intersections/_search?q=lake
 
 {"took":487,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":19,"relation":"eq"},"max_score":2.7334583,"hits":[{"_index":"intersections","_type":"_doc","_id":"472982424","_score":2.7334583,"_source":{"location": {"lat": 43.1762392, "lon": -87.895758}, "streets": ["North Lake Drive"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"4602472245","_score":2.7334583,"_source":{"location": {"lat": 43.1953975, "lon": -87.8972865}, "streets": ["North Lake Drive", null], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"231846907","_score":2.7334583,"_source":{"location": {"lat": 43.1955777, "lon": -87.8979194}, "streets": ["North Lake Drive"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"472988808","_score":2.172727,"_source":{"location": {"lat": 43.1707462, "lon": -87.8955177}, "streets": ["North Lake Drive", "East Buttles Place"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"472988853","_score":2.172727,"_source":{"location": {"lat": 43.1747281, "lon": -87.895458}, "streets": ["East Wahner Place", "North Lake Drive"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"472988850","_score":2.172727,"_source":{"location": {"lat": 43.1729254, "lon": -87.8954734}, "streets": ["North Lake Drive", "East Wabash Place"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"196635217","_score":2.172727,"_source":{"location": {"lat": 43.1780603, "lon": -87.8953535}, "streets": ["East Glencoe Place", "North Lake Drive"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"196635218","_score":2.172727,"_source":{"location": {"lat": 43.1796597, "lon": -87.8952999}, "streets": ["North Lake Drive", "East Standish Place"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"196635219","_score":2.172727,"_source":{"location": {"lat": 43.1807839, "lon": -87.8952595}, "streets": ["North Lake Drive", "East Hermitage Road"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"196635228","_score":2.172727,"_source":{"location": {"lat": 43.1865708, "lon": -87.8950885}, "streets": ["North Lake Drive", "East Glenbrook Road"], "place": "Bayside, Wisconsin"}}]}}(ox) 
 ```
+
+This is what we're after: structured query with large query text to find most relevant intersections
+
+```
+curl -XGET http://localhost:9200/intersections/_search?pretty -d
+'
+{
+  "query": 
+	{
+		"match":
+		{
+		"streets":"slacks moodring lives near lake drive and east standish place in disturbia wisconsin"
+		}
+	}
+}
+'
+
+{
+  "took": 11,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 109,
+      "relation": "eq"
+    },
+    "max_score": 8.776541,
+    "hits": [
+      {
+        "_index": "intersections",
+        "_type": "_doc",
+        "_id": "196635218",
+        "_score": 8.776541,
+        "_source": {
+          "location": {
+            "lat": 43.1796597,
+            "lon": -87.8952999
+          },
+          "streets": [
+            "North Lake Drive",
+            "East Standish Place"
+          ],
+          "place": "Bayside, Wisconsin"
+        }
+      },
+      {
+        "_index": "intersections",
+        "_type": "_doc",
+        "_id": "196665011",
+        "_score": 6.6657786,
+        "_source": {
+          "location": {
+            "lat": 43.1786498,
+            "lon": -87.8889138
+          },
+          "streets": [
+            "East Standish Place"
+          ],
+          "place": "Bayside, Wisconsin"
+        }
+      },
+      {
+        "_index": "intersections",
+        "_type": "_doc",
+        "_id": "196665007",
+        "_score": 6.603813,
+        "_source": {
+          "location": {
+            "lat": 43.179363,
+            "lon": -87.8912343
+          },
+          "streets": [
+            "North Bayside Drive",
+            "East Standish Place"
+          ],
+          "place": "Bayside, Wisconsin"
+        }
+      },
+      ...
+```
+
