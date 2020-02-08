@@ -36,9 +36,9 @@ Found nearest nodes to 176 points in 0.00 seconds
 
 `place` must be geocodable and OSM must have polygon boundaries for the geocode result.
 
-### Indexing intersections with Elastic Search:
+### Indexing intersections with ElasticSearch:
 
-#### Install and run ElasticSearch
+#### Install and run ElasticSearch (ES)
 
 ElasticSearch Setup:
 https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html
@@ -84,7 +84,7 @@ You should see something like the following:
 
 Create the index `intersctions` and define the datatype mappings for the index.
 
-Highly recommend using a tool like `Postman` to handle complex curl queries.
+Recommend using a tool like `Postman` to handle complex curl queries.
 
 ```
 curl -XPUT http://localhost:9200/intersections -d
@@ -118,19 +118,20 @@ If everything worked, you should get something like the following:
 }
 ```
 
-Insert a single record into the index:
+Insert a single record into the index by id (OSMID):
+
 ```
-curl -XPUT http://localhost:9200/intersections/_doc/472988808 -d 
-'
-{
+curl -XPUT http://localhost:9200/intersections/_doc/472988808' \
+--header 'Content-Type: application/json' \
+--data-raw '{
   "location": { 
     "lat": 43.1707462,
     "lon": -87.8955177
   },
   "streets": ["North Lake Drive", "East Buttles Place"],
   "place": "Bayside, Wisconsin"
-}
-'
+}'
+
 ```
 
 You should see something like the following:
@@ -154,7 +155,14 @@ You should see something like the following:
 Query the index:
 
 ```
-$ curl -XGET http://localhost:9200/intersections/_search?q=lake
+curl --location --request GET 'http://localhost:9200/intersections/_search?q=lake' \
+--header 'Content-Type: application/json'
+
+```
+
+You should see something like the following:
+
+```
 
 {"took":780,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":0.2876821,"hits":[{"_index":"intersections","_type":"_doc","_id":"472988808","_score":0.2876821,"_source":
 {
@@ -166,11 +174,13 @@ $ curl -XGET http://localhost:9200/intersections/_search?q=lake
   "place": "Bayside, Wisconsin"
 }
 ```
-Structured query by latitude and longitude
+
+Structured (body) geocode query by latitude and longitude bounding box
 
 ```
-curl -XGET http://localhost:9200/intersections/_search?pretty
-{
+curl --location --request GET 'http://localhost:9200/intersections/_search' \
+--header 'Content-Type: application/json' \
+--data-raw '{
   "query": {
     "geo_bounding_box": { 
       "location": {
@@ -185,7 +195,8 @@ curl -XGET http://localhost:9200/intersections/_search?pretty
       }
     }
   }
-}
+}'
+
 ```
 
 You should see something like the following:
@@ -228,6 +239,71 @@ You should see something like the following:
   }
 }
 ```
+
+Structured (body) geocode query by latitude and longitude distance
+
+```
+curl --location --request GET 'http://localhost:9200/intersections/_search' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "query": {
+        "bool": {
+            "must": {
+                "match_all": {}
+            },
+            "filter": {
+                "geo_distance": {
+                    "distance": "1km",
+                    "location": {
+                        "lat": 43.1806231,
+                        "lon": -87.8927188
+                    }
+                }
+            }
+        }
+    }
+}'
+
+```
+
+You should see something like the following:
+
+```
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 70,
+            "relation": "eq"
+        },
+        "max_score": 1.0,
+        "hits": [
+            {
+                "_index": "intersections",
+                "_type": "_doc",
+                "_id": "472982424",
+                "_score": 1.0,
+                "_source": {
+                    "location": {
+                        "lat": 43.1762392,
+                        "lon": -87.895758
+                    },
+                    "streets": [
+                        "North Lake Drive"
+                    ],
+                    "place": "Bayside, Wisconsin"
+                }
+            },
+            ...
+```
+
 Bulk insert:
 
 Run `es_bulk_intersections` to generate a JSON file of intersections in ES bulk format:

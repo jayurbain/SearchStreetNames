@@ -41,7 +41,7 @@ def connections( place ):
     '''
     
     # Create a networkx graph from OSM data within the spatial boundaries of geocodable place(s).
-    G = ox.graph_from_place(place, network_type='drive')
+    G = ox.graph_from_place(place, network_type='drive',  timeout=3600)
     
     # Project a graph from lat-long to the UTM zone appropriate for its geographic location.
     # https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system
