@@ -14,7 +14,6 @@ Alternatively, install OSMnx via pip within some environment: `pip install osmnx
 Reference:    
 https://github.com/gboeing/osmnx
 
-
 ### Retrieving geocoded intersections: 
 At this point you should be able to retrieve a list of street intersection dictionaries.
 `road_connections.py` - given a textual query of a geocodeable place return a list of dictionaries with the following information:
@@ -82,10 +81,11 @@ You should see something like the following:
 
 #### Create an ElasticSearch Index  
 
-Create the index `intersctions` and define the datatype mappings for the index.
+Create the index `intersections` and define the datatype mappings for the index.
 
 Recommend using a tool like `Postman` to handle complex curl queries.
 
+Option: Standard term analysis without phonetics search
 ```
 curl -XPUT http://localhost:9200/intersections -d
 '{
@@ -107,12 +107,70 @@ curl -XPUT http://localhost:9200/intersections -d
     }
 }'
 ```
+
+Option: Term analysis with phonetics search (IMHO: this works really well)
+
+First, install the ES phonetic analysis plugin:
+
+```
+$ bin/elasticsearch-plugin install analysis-phonetic
+```
+
+Restart ElasticSearch
+
+```
+curl --location --request PUT 'http://localhost:9200/intersections_p2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "settings": {
+        "index": {
+            "analysis": {
+                "analyzer": {
+                    "phonetic_analyzer": {
+                        "tokenizer": "standard",
+                        "filter": [
+                            "lowercase",
+                            "my_metaphone"
+                        ]
+                    }
+                },
+                "filter": {
+                    "my_metaphone": {
+                        "type": "phonetic",
+                        "encoder": "metaphone",
+                        "replace": false
+                    }
+                }
+            }
+        }
+    },
+    "mappings": {
+        "dynamic": "strict",
+        "properties": {
+            "location": {
+                "type": "geo_point"
+            },
+            "streets": {
+                "type": "text",
+                "analyzer": "phonetic_analyzer"
+            },
+            "place": {
+                "type": "text",
+                "analyzer": "standard"
+            }
+        }
+    }
+}'
+
+```
+
 Note: Creating the index and mapping the data types can be done in
 two steps, but you need to define the data type mapping before 
 inserting records. You need to use this approach with AWS ElasticSearch.
 
 So with AWS ElasticSearch, define your domain using their online tools,
-and then isse the following query to define the index mappings:
+and then issue the something like the following mapping query to define the index mappings
+before inserting any records:
 
 curl --location --request PUT 'https://search-intersections-y6owyaorob2xafcmoct3va32eq.us-east-1.es.amazonaws.com/intersections' \
 --header 'Content-Type: application/json' \
@@ -202,9 +260,30 @@ You should see something like the following:
 }
 ```
 
+Here's where phonetic analysis comes in handy. Issues the following query. In this 
+case change the query 'lake' to 'lke'. If do not use phonetic analysis you will
+not get any results. If you do, you will find records with lake!
+
+```
+curl --location --request GET 'http://localhost:9200/intersections/_search?q=lke' \
+--header 'Content-Type: application/json'
+
+{"took":780,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":0.2876821,"hits":[{"_index":"intersections","_type":"_doc","_id":"472988808","_score":0.2876821,"_source":
+{
+  "location": { 
+    "lat": 43.1707462,
+    "lon": -87.8955177
+  },
+  "streets": ["North Lake Drive", "East Buttles Place"],
+  "place": "Bayside, Wisconsin"
+}
+```
+
 Bulk insert:
 
-Run `es_bulk_intersections` to generate a JSON file of intersections in ES bulk format:
+Run `es_bulk_intersections` to generate a JSON file of intersections in ES bulk format. Make
+sure the `--index_name` parameter is set to the index name you will bulk insert the 
+records into.
 
 ```
 python es_bulk_intersections.py --index_name='intersections' --place='Bayside, Wisconsin' --bulk_file='bayside_wi.json'
@@ -213,7 +292,8 @@ python es_bulk_intersections.py --index_name='intersections' --place='Bayside, W
 Post the bulk records to ES:
 
 ```
-$ curl -XPOST http://127.0.0.1:9200/intersections/_bulk --data-binary "@bayside_wi.json"
+
+curl -XPOST http://localhost:9200/intersections_p2/_bulk --header 'Content-Type: application/json' --data-binary "@bayside_wi.json"
 
 AWS ES:   
 
@@ -229,7 +309,7 @@ $ curl -XGET http://localhost:9200/intersections/_search?q=lake
 {"took":487,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":19,"relation":"eq"},"max_score":2.7334583,"hits":[{"_index":"intersections","_type":"_doc","_id":"472982424","_score":2.7334583,"_source":{"location": {"lat": 43.1762392, "lon": -87.895758}, "streets": ["North Lake Drive"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"4602472245","_score":2.7334583,"_source":{"location": {"lat": 43.1953975, "lon": -87.8972865}, "streets": ["North Lake Drive", null], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"231846907","_score":2.7334583,"_source":{"location": {"lat": 43.1955777, "lon": -87.8979194}, "streets": ["North Lake Drive"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"472988808","_score":2.172727,"_source":{"location": {"lat": 43.1707462, "lon": -87.8955177}, "streets": ["North Lake Drive", "East Buttles Place"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"472988853","_score":2.172727,"_source":{"location": {"lat": 43.1747281, "lon": -87.895458}, "streets": ["East Wahner Place", "North Lake Drive"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"472988850","_score":2.172727,"_source":{"location": {"lat": 43.1729254, "lon": -87.8954734}, "streets": ["North Lake Drive", "East Wabash Place"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"196635217","_score":2.172727,"_source":{"location": {"lat": 43.1780603, "lon": -87.8953535}, "streets": ["East Glencoe Place", "North Lake Drive"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"196635218","_score":2.172727,"_source":{"location": {"lat": 43.1796597, "lon": -87.8952999}, "streets": ["North Lake Drive", "East Standish Place"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"196635219","_score":2.172727,"_source":{"location": {"lat": 43.1807839, "lon": -87.8952595}, "streets": ["North Lake Drive", "East Hermitage Road"], "place": "Bayside, Wisconsin"}},{"_index":"intersections","_type":"_doc","_id":"196635228","_score":2.172727,"_source":{"location": {"lat": 43.1865708, "lon": -87.8950885}, "streets": ["North Lake Drive", "East Glenbrook Road"], "place": "Bayside, Wisconsin"}}]}}(ox) 
 ```
 
-This is what we're after: structured query with large query text to find most relevant intersections
+Now lets evaluate what we're after: structured query with large query text to find most relevant intersections
 
 ```
 curl -XGET http://localhost:9200/intersections/_search?pretty -d
@@ -446,3 +526,5 @@ You should see something like the following:
             },
             ...
 ```
+
+
