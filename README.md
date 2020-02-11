@@ -260,9 +260,9 @@ You should see something like the following:
 }
 ```
 
-Here's where phonetic analysis comes in handy. Issues the following query. In this 
-case change the query 'lake' to 'lke'. If do not use phonetic analysis you will
-not get any results. If you do, you will find records with lake!
+Here's where phonetic analysis comes in handy. Issue the following query. In this 
+case change the query 'lake' to 'lke'. If you do not use phonetic analysis you will
+not get any results. If you do, you will find records with lake! Try other examples.
 
 ```
 curl --location --request GET 'http://localhost:9200/intersections/_search?q=lke' \
@@ -526,6 +526,7 @@ You should see something like the following:
             },
             ...
 ```
+
 Compound query clauses wrap other leaf or compound queries and are used to combine multiple queries in a logical fashion (such as the bool or dis_max query), or to alter their behaviour (such as the constant_score query).
 Structured (body) geocode query filtered by distance with relevance terms
 
@@ -562,6 +563,7 @@ curl --location --request GET 'http://localhost:9200/intersections_p2/_search' \
 
 ```
 Disjunction max query
+
 Returns documents matching one or more wrapped queries, called query clauses or clauses.
 
 If a returned document matches multiple query clauses, the dis_max query assigns the document the highest relevance score from any matching clause, plus a tie breaking increment for any additional matching subqueries.
