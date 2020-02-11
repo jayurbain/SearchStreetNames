@@ -85,7 +85,7 @@ Create the index `intersections` and define the datatype mappings for the index.
 
 Recommend using a tool like `Postman` to handle complex curl queries.
 
-Option: Standard term analysis without phonetics search
+Option 1: Standard term analysis without phonetics search
 ```
 curl -XPUT http://localhost:9200/intersections -d
 '{
@@ -108,7 +108,7 @@ curl -XPUT http://localhost:9200/intersections -d
 }'
 ```
 
-Option: Term analysis with phonetics search (IMHO: this works really well)
+Option 2: Term analysis with phonetics search (IMHO: this works really well)
 
 First, install the ES phonetic analysis plugin:
 
@@ -156,7 +156,7 @@ curl --location --request PUT 'http://localhost:9200/intersections_p2' \
             },
             "place": {
                 "type": "text",
-                "analyzer": "standard"
+                "analyzer": "phonetic_analyzer"
             }
         }
     }
@@ -526,5 +526,75 @@ You should see something like the following:
             },
             ...
 ```
+Compound query clauses wrap other leaf or compound queries and are used to combine multiple queries in a logical fashion (such as the bool or dis_max query), or to alter their behaviour (such as the constant_score query).
+Structured (body) geocode query filtered by distance with relevance terms
+
+```
+curl --location --request GET 'http://localhost:9200/intersections_p2/_search' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "query": {
+        "bool": {
+            "should": [
+                {
+                    "term": {
+                        "streets": "tennyson"
+                    }
+                },
+                {
+                    "term": {
+                        "streets": "hermitage"
+                    }
+                }
+            ],
+            "filter": {
+                "geo_distance": {
+                    "distance": "1km",
+                    "location": {
+                        "lat": 43.1806231,
+                        "lon": -87.8927188
+                    }
+                }
+            }
+        }
+    }
+}'
+
+```
+Disjunction max query
+Returns documents matching one or more wrapped queries, called query clauses or clauses.
+
+If a returned document matches multiple query clauses, the dis_max query assigns the document the highest relevance score from any matching clause, plus a tie breaking increment for any additional matching subqueries.
+```
+
+curl --location --request GET 'http://localhost:9200/intersections_p2/_search' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "query": {
+        "dis_max": {
+            "queries": [
+                {
+                    "term": {
+                        "streets": "tennyson"
+                    }
+                },
+                {
+                    "term": {
+                        "streets": "hermitage"
+                    }
+                }
+            ],
+            "tie_breaker": 0.7
+        }
+    }
+}'
 
 
+```
+
+Delete index
+
+```
+curl --request DELETE 'http://localhost:9200/intersections_p2' 
+
+```

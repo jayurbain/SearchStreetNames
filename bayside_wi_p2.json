@@ -1,0 +1,352 @@
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472988808}}
+{"location": {"lat": 43.1707462, "lon": -87.8955177}, "streets": ["North Lake Drive", "East Buttles Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628902}}
+{"location": {"lat": 43.1709381, "lon": -87.8970584}, "streets": ["North Fielding Road", "East Buttles Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196673178}}
+{"location": {"lat": 43.1709506, "lon": -87.8983888}, "streets": ["North Greenvale Road", "East Buttles Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 6915412409}}
+{"location": {"lat": 43.1715911, "lon": -87.8996654}, "streets": ["East Buttles Place", "East Buttles Road", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472982424}}
+{"location": {"lat": 43.1762392, "lon": -87.895758}, "streets": ["North Lake Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196675300}}
+{"location": {"lat": 43.1765149, "lon": -87.8915202}, "streets": ["East Brown Deer Road", "North Bayside Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196675298}}
+{"location": {"lat": 43.1765309, "lon": -87.89364}, "streets": ["East Brown Deer Road", "North Tennyson Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472988853}}
+{"location": {"lat": 43.1747281, "lon": -87.895458}, "streets": ["North Lake Drive", "East Wahner Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628906}}
+{"location": {"lat": 43.1747547, "lon": -87.896691}, "streets": ["North Fielding Road", "East Wahner Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196656656}}
+{"location": {"lat": 43.1747644, "lon": -87.8978587}, "streets": ["East Wahner Place", "North Greenvale Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196656652}}
+{"location": {"lat": 43.1747752, "lon": -87.8990754}, "streets": ["East Wahner Place", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472988850}}
+{"location": {"lat": 43.1729254, "lon": -87.8954734}, "streets": ["North Lake Drive", "East Wabash Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628904}}
+{"location": {"lat": 43.1729412, "lon": -87.8968781}, "streets": ["North Fielding Road", "East Wabash Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196665117}}
+{"location": {"lat": 43.1729474, "lon": -87.8982343}, "streets": ["East Wabash Place", "North Greenvale Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196665115}}
+{"location": {"lat": 43.172968, "lon": -87.8995238}, "streets": ["East Wabash Place", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472982428}}
+{"location": {"lat": 43.1765441, "lon": -87.8954519}, "streets": ["North Lake Drive", "East Brown Deer Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628908}}
+{"location": {"lat": 43.1765664, "lon": -87.8966498}, "streets": ["North Lake Drive", "East Brown Deer Road", "North Fielding Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196673488}}
+{"location": {"lat": 43.1765963, "lon": -87.8978624}, "streets": ["East Brown Deer Road", "North Greenvale Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196676439}}
+{"location": {"lat": 43.1766109, "lon": -87.8993122}, "streets": ["East Brown Deer Road", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 6460351257}}
+{"location": {"lat": 43.176838, "lon": -87.9167793}, "streets": [], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196620924}}
+{"location": {"lat": 43.1768265, "lon": -87.9155181}, "streets": ["West Brown Deer Road", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 197687128}}
+{"location": {"lat": 43.1774441, "lon": -87.917449}, "streets": ["North-South Freeway", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196678555}}
+{"location": {"lat": 43.1776575, "lon": -87.9052135}, "streets": ["North Regent Road", "North Malibu Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196637315}}
+{"location": {"lat": 43.1776682, "lon": -87.9107668}, "streets": ["North Mohawk Road", "North Iroquois Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196654110}}
+{"location": {"lat": 43.1772041, "lon": -87.8978527}, "streets": ["North Greenvale Court", "North Greenvale Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 4983883764}}
+{"location": {"lat": 43.1772308, "lon": -87.9130697}, "streets": [null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196669933}}
+{"location": {"lat": 43.1777645, "lon": -87.9019864}, "streets": ["East Glencoe Place", "North Rexleigh Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635217}}
+{"location": {"lat": 43.1780603, "lon": -87.8953535}, "streets": ["East Glencoe Place", "North Lake Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628922}}
+{"location": {"lat": 43.1780635, "lon": -87.8966321}, "streets": ["East Glencoe Place", "North Fielding Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196669942}}
+{"location": {"lat": 43.1780616, "lon": -87.8978222}, "streets": ["East Glencoe Place", "North Greenvale Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196669940}}
+{"location": {"lat": 43.1780711, "lon": -87.8994692}, "streets": ["East Glencoe Place", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196669934}}
+{"location": {"lat": 43.1780824, "lon": -87.9012366}, "streets": ["East Glencoe Place", "North Maitland Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196676441}}
+{"location": {"lat": 43.176636, "lon": -87.901235}, "streets": ["East Brown Deer Road", "North Rexleigh Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196676445}}
+{"location": {"lat": 43.1766719, "lon": -87.9052453}, "streets": ["East Brown Deer Road", "North Regent Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 3903080389}}
+{"location": {"lat": 43.17683, "lon": -87.9129113}, "streets": ["West Brown Deer Road", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 473012021}}
+{"location": {"lat": 43.1766944, "lon": -87.9150713}, "streets": ["West Brown Deer Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 2641243997}}
+{"location": {"lat": 43.1768131, "lon": -87.9113985}, "streets": ["West Brown Deer Road", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196666181}}
+{"location": {"lat": 43.17671, "lon": -87.9077514}, "streets": ["East Brown Deer Road", "West Brown Deer Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196676447}}
+{"location": {"lat": 43.1767235, "lon": -87.9094188}, "streets": ["West Brown Deer Road", "North Navajo Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196637313}}
+{"location": {"lat": 43.1767372, "lon": -87.910796}, "streets": ["North Mohawk Road", "West Brown Deer Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 197778523}}
+{"location": {"lat": 43.1788918, "lon": -87.9182008}, "streets": [null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196665007}}
+{"location": {"lat": 43.179363, "lon": -87.8912343}, "streets": ["East Standish Place", "North Bayside Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 473013407}}
+{"location": {"lat": 43.1795903, "lon": -87.9135005}, "streets": ["North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635218}}
+{"location": {"lat": 43.1796597, "lon": -87.8952999}, "streets": ["North Lake Drive", "East Standish Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196665020}}
+{"location": {"lat": 43.1796564, "lon": -87.8977614}, "streets": ["East Standish Place", "North Greenvale Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196665018}}
+{"location": {"lat": 43.1796734, "lon": -87.8994246}, "streets": ["East Standish Place", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196665005}}
+{"location": {"lat": 43.1795345, "lon": -87.8928784}, "streets": ["North Tennyson Drive", "East Standish Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196665003}}
+{"location": {"lat": 43.1795702, "lon": -87.8936456}, "streets": ["North Tennyson Drive", "East Standish Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196686170}}
+{"location": {"lat": 43.1793247, "lon": -87.9051699}, "streets": ["North Regent Road", "North Santa Monica Boulevard"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196650283}}
+{"location": {"lat": 43.1794018, "lon": -87.9065905}, "streets": ["East Marti Court", "North Malibu Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196678559}}
+{"location": {"lat": 43.179935, "lon": -87.9059459}, "streets": ["North Malibu Drive", "North Santa Monica Boulevard"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196630097}}
+{"location": {"lat": 43.1803204, "lon": -87.9136084}, "streets": ["North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196675985}}
+{"location": {"lat": 43.1803078, "lon": -87.9152236}, "streets": ["North White Oak Lane", "West Autumn Path Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 6297600861}}
+{"location": {"lat": 43.1803026, "lon": -87.9159515}, "streets": ["North White Oak Lane", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196637319}}
+{"location": {"lat": 43.1803617, "lon": -87.9106874}, "streets": ["North Mohawk Road", "West Krause Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196691764}}
+{"location": {"lat": 43.1803759, "lon": -87.9093071}, "streets": ["North Navajo Road", "West Krause Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196694150}}
+{"location": {"lat": 43.1803437, "lon": -87.9163626}, "streets": ["North White Oak Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196621394}}
+{"location": {"lat": 43.1807256, "lon": -87.891343}, "streets": ["North Bayside Drive", "East Hermitage Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 2993371501}}
+{"location": {"lat": 43.1806231, "lon": -87.8927188}, "streets": ["North Tennyson Drive", "East Hermitage Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628927}}
+{"location": {"lat": 43.1812484, "lon": -87.8967218}, "streets": ["North Fielding Road", "East Hermitage Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 473013078}}
+{"location": {"lat": 43.1809279, "lon": -87.9152222}, "streets": ["West Autumn Path Lane", "West Aspenwood Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196672200}}
+{"location": {"lat": 43.1809833, "lon": -87.9146473}, "streets": ["West Cumberland Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 6297600763}}
+{"location": {"lat": 43.1818246, "lon": -87.9154168}, "streets": ["West Evergreen Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196673800}}
+{"location": {"lat": 43.1816416, "lon": -87.9122978}, "streets": ["West Ellsworth Lane", "North Iroquois Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196672192}}
+{"location": {"lat": 43.1812609, "lon": -87.9150361}, "streets": ["West Cumberland Court", "West Autumn Path Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196690680}}
+{"location": {"lat": 43.1813751, "lon": -87.9073922}, "streets": ["North Santa Monica Boulevard", "West Krause Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196630098}}
+{"location": {"lat": 43.1814989, "lon": -87.9142544}, "streets": ["West Ellsworth Lane", "North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196666172}}
+{"location": {"lat": 43.1816234, "lon": -87.9096285}, "streets": ["West Ellsworth Lane", "North Seneca Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196637321}}
+{"location": {"lat": 43.1816175, "lon": -87.9106655}, "streets": ["North Mohawk Road", "West Ellsworth Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 475282821}}
+{"location": {"lat": 43.1821393, "lon": -87.8878672}, "streets": ["East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628918}}
+{"location": {"lat": 43.1819122, "lon": -87.896624}, "streets": ["East Ellsworth Lane", "North Fielding Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196644676}}
+{"location": {"lat": 43.181942, "lon": -87.8993479}, "streets": ["East Ellsworth Lane", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196683593}}
+{"location": {"lat": 43.1807848, "lon": -87.8940687}, "streets": ["North Meadowlark Lane", "East Hermitage Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635219}}
+{"location": {"lat": 43.1807839, "lon": -87.8952595}, "streets": ["North Lake Drive", "East Hermitage Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196666170}}
+{"location": {"lat": 43.1806951, "lon": -87.9086953}, "streets": ["North Seneca Road", "West Krause Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196671997}}
+{"location": {"lat": 43.1809029, "lon": -87.9157773}, "streets": ["West Aspenwood Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196673489}}
+{"location": {"lat": 43.1809908, "lon": -87.8977103}, "streets": ["East Hermitage Road", "North Greenvale Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196683596}}
+{"location": {"lat": 43.1810128, "lon": -87.8993897}, "streets": ["East Hermitage Road", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196665011}}
+{"location": {"lat": 43.1786498, "lon": -87.8889138}, "streets": ["East Standish Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196666168}}
+{"location": {"lat": 43.1785209, "lon": -87.9080012}, "streets": ["East Glencoe Place", "West Glencoe Place", "North Seneca Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196669936}}
+{"location": {"lat": 43.1785078, "lon": -87.9066247}, "streets": ["East Glencoe Place", "North Malibu Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196676771}}
+{"location": {"lat": 43.1785381, "lon": -87.9093625}, "streets": ["West Glencoe Place", "North Navajo Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196637317}}
+{"location": {"lat": 43.1785534, "lon": -87.9107429}, "streets": ["North Mohawk Road", "West Glencoe Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196673796}}
+{"location": {"lat": 43.1785713, "lon": -87.9119631}, "streets": ["West Glencoe Place", "North Iroquois Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 1305175035}}
+{"location": {"lat": 43.178586, "lon": -87.9132786}, "streets": ["West Glencoe Place", "North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196626747}}
+{"location": {"lat": 43.1786821, "lon": -87.9027773}, "streets": ["North King Road", "North Rexleigh Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 6297600550}}
+{"location": {"lat": 43.1826047, "lon": -87.9159584}, "streets": ["West Mulberry Court", "West Autumn Path Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196677557}}
+{"location": {"lat": 43.1833144, "lon": -87.9187192}, "streets": ["North Briarwood Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196690416}}
+{"location": {"lat": 43.1838348, "lon": -87.8909406}, "streets": ["East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196690414}}
+{"location": {"lat": 43.18385, "lon": -87.8915091}, "streets": ["North Bayside Drive", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 698844}}
+{"location": {"lat": 43.1837264, "lon": -87.9206692}, "streets": [null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628912}}
+{"location": {"lat": 43.1828513, "lon": -87.8965891}, "streets": ["North Fielding Road", "East Manor Circle"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196643002}}
+{"location": {"lat": 43.1828744, "lon": -87.9169703}, "streets": ["North Sycamore Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196650212}}
+{"location": {"lat": 43.1828589, "lon": -87.8988833}, "streets": ["East Manor Circle", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196632674}}
+{"location": {"lat": 43.1827938, "lon": -87.912262}, "streets": ["North Iroquois Road", "West Manor Circle"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196650211}}
+{"location": {"lat": 43.1830427, "lon": -87.8995473}, "streets": ["East Manor Circle", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196632670}}
+{"location": {"lat": 43.1830605, "lon": -87.9089615}, "streets": ["North Santa Monica Boulevard", "West Manor Circle"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196660149}}
+{"location": {"lat": 43.1841281, "lon": -87.9192714}, "streets": ["West Fairy Chasm Road", "West Autumn Path Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196657288}}
+{"location": {"lat": 43.1848076, "lon": -87.9006186}, "streets": ["North Thrush Lane", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 4981414363}}
+{"location": {"lat": 43.1845174, "lon": -87.9180605}, "streets": ["North Port Washington Road", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 6298059005}}
+{"location": {"lat": 43.1847564, "lon": -87.9183516}, "streets": ["North Port Court", "North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 3903080398}}
+{"location": {"lat": 43.1841058, "lon": -87.9170322}, "streets": ["West Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196630099}}
+{"location": {"lat": 43.1841131, "lon": -87.9175497}, "streets": ["West Fairy Chasm Road", "North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 3903080399}}
+{"location": {"lat": 43.1841181, "lon": -87.9179659}, "streets": ["West Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196660147}}
+{"location": {"lat": 43.1840992, "lon": -87.9165179}, "streets": ["West Fairy Chasm Road", "North Ironwood Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472970708}}
+{"location": {"lat": 43.1843065, "lon": -87.9069422}, "streets": ["North Broadmoor Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196638100}}
+{"location": {"lat": 43.1852139, "lon": -87.907}, "streets": ["North Waverly Drive", "North Fairway Drive", "North Broadmoor Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196682005}}
+{"location": {"lat": 43.1853635, "lon": -87.8921703}, "streets": ["North Tennyson Drive", "East Bay Point Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635224}}
+{"location": {"lat": 43.1851222, "lon": -87.895124}, "streets": ["North Lake Drive", "East Bay Point Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196686162}}
+{"location": {"lat": 43.1852119, "lon": -87.9040152}, "streets": ["North Regent Road", "East Laramie Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196620179}}
+{"location": {"lat": 43.1854974, "lon": -87.9062122}, "streets": ["North Fairway Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196657282}}
+{"location": {"lat": 43.185623, "lon": -87.9018998}, "streets": ["North Thrush Lane", "East Laramie Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196687604}}
+{"location": {"lat": 43.1838592, "lon": -87.8926984}, "streets": ["North Tennyson Drive", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196676015}}
+{"location": {"lat": 43.1836041, "lon": -87.9192886}, "streets": ["West Autumn Path Lane", "North Briarwood Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196690412}}
+{"location": {"lat": 43.1838669, "lon": -87.8938812}, "streets": ["North Meadowlark Lane", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635222}}
+{"location": {"lat": 43.1838751, "lon": -87.8951467}, "streets": ["North Lake Drive", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 3903080394}}
+{"location": {"lat": 43.1837087, "lon": -87.9169657}, "streets": ["North Port Washington Road", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628915}}
+{"location": {"lat": 43.1838837, "lon": -87.896554}, "streets": ["North Fielding Road", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196690410}}
+{"location": {"lat": 43.1839013, "lon": -87.8999659}, "streets": ["North Pelham Parkway", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196690407}}
+{"location": {"lat": 43.1839033, "lon": -87.9007412}, "streets": ["North Pelham Parkway", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196690405}}
+{"location": {"lat": 43.1839286, "lon": -87.9036469}, "streets": ["North Rexleigh Drive", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196686161}}
+{"location": {"lat": 43.1839324, "lon": -87.9040462}, "streets": ["North Regent Road", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196686172}}
+{"location": {"lat": 43.1839397, "lon": -87.905017}, "streets": ["North Regent Road", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196638098}}
+{"location": {"lat": 43.1839647, "lon": -87.906856}, "streets": ["North Broadmoor Road", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196660144}}
+{"location": {"lat": 43.1839991, "lon": -87.9095774}, "streets": ["West Fairy Chasm Road", "North Santa Monica Boulevard", "East Fairy Chasm Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196660146}}
+{"location": {"lat": 43.1840186, "lon": -87.9122314}, "streets": ["West Fairy Chasm Road", "North Sleepy Hollow Road", "North Iroquois Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196681998}}
+{"location": {"lat": 43.185917, "lon": -87.8985275}, "streets": ["East Bay Point Road", "North Pelham Parkway"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196623090}}
+{"location": {"lat": 43.1857784, "lon": -87.9128772}, "streets": ["North Sleepy Hollow Road", "West Laramie Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 3855371633}}
+{"location": {"lat": 43.1860821, "lon": -87.9214689}, "streets": [null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635228}}
+{"location": {"lat": 43.1865708, "lon": -87.8950885}, "streets": ["North Lake Drive", "East Glenbrook Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196623094}}
+{"location": {"lat": 43.185898, "lon": -87.9158125}, "streets": ["North Ironwood Lane", "West Laramie Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472970784}}
+{"location": {"lat": 43.1862213, "lon": -87.9077319}, "streets": ["North Broadmoor Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196683146}}
+{"location": {"lat": 43.1869126, "lon": -87.8970677}, "streets": ["East Crocker Place", "East Glenbrook Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 269101072}}
+{"location": {"lat": 43.1868299, "lon": -87.9214549}, "streets": ["North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 3855371644}}
+{"location": {"lat": 43.1866342, "lon": -87.9211294}, "streets": ["North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196668025}}
+{"location": {"lat": 43.1880717, "lon": -87.9030367}, "streets": ["North Regent Road", "North Regent Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196681996}}
+{"location": {"lat": 43.1881506, "lon": -87.9017069}, "streets": ["East Bay Point Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196637446}}
+{"location": {"lat": 43.1883031, "lon": -87.8979621}, "streets": ["East Ravine Lane", "East Glenbrook Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196630102}}
+{"location": {"lat": 43.1882135, "lon": -87.9226776}, "streets": ["North Port Washington Road", "West Ravine Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472912249}}
+{"location": {"lat": 43.189032, "lon": -87.9144892}, "streets": ["North Sleepy Hollow Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196681994}}
+{"location": {"lat": 43.1891966, "lon": -87.9013456}, "streets": ["North Regent Road", "East Bay Point Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196619337}}
+{"location": {"lat": 43.1896696, "lon": -87.9080294}, "streets": ["North Fairway Circle", "North Fairway Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196655864}}
+{"location": {"lat": 43.1895436, "lon": -87.919029}, "streets": ["North Sequoia Drive", "West Jonathan Lane", "North Apple Blossom Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635236}}
+{"location": {"lat": 43.1901051, "lon": -87.895027}, "streets": ["East Donges Lane", "North Lake Drive", "East Donges Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196674770}}
+{"location": {"lat": 43.1886161, "lon": -87.907766}, "streets": ["North Fairway Circle"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196686164}}
+{"location": {"lat": 43.1885566, "lon": -87.9023534}, "streets": ["North Regent Road", "East Bay Point Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635232}}
+{"location": {"lat": 43.1887828, "lon": -87.8950432}, "streets": ["East Ravine Lane", "North Lake Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 2472535505}}
+{"location": {"lat": 43.1871505, "lon": -87.9220313}, "streets": ["North Port Washington Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196657284}}
+{"location": {"lat": 43.1873471, "lon": -87.9011537}, "streets": ["North Thrush Lane", "East Bay Point Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196659878}}
+{"location": {"lat": 43.1874824, "lon": -87.9057745}, "streets": ["North Fairway Circle", "North Fairway Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635230}}
+{"location": {"lat": 43.1875839, "lon": -87.8950725}, "streets": ["North Lake Drive", "East Crocker Place"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196683239}}
+{"location": {"lat": 43.1898288, "lon": -87.9220311}, "streets": ["West Jonathan Lane", "North Apple Blossom Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196638085}}
+{"location": {"lat": 43.1898939, "lon": -87.9107769}, "streets": ["North Broadmoor Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196638102}}
+{"location": {"lat": 43.1901303, "lon": -87.9120723}, "streets": ["North Broadmoor Road", "East Ravine Baye Road", "North Waverly Drive", "West Ravine Baye Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472229700}}
+{"location": {"lat": 43.1914711, "lon": -87.9154782}, "streets": ["North Wakefield Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472970580}}
+{"location": {"lat": 43.1910775, "lon": -87.9035957}, "streets": ["Miller Court", "East Ravine Baye Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196655868}}
+{"location": {"lat": 43.1910441, "lon": -87.9206787}, "streets": ["North Sequoia Drive", "West Duchess Court"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196683241}}
+{"location": {"lat": 43.1910572, "lon": -87.9220616}, "streets": ["West Duchess Court", "North Apple Blossom Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635238}}
+{"location": {"lat": 43.1912852, "lon": -87.8950156}, "streets": ["East Donges Lane", "North Lake Drive", "East Donges Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196630628}}
+{"location": {"lat": 43.1914152, "lon": -87.9023033}, "streets": ["East Ravine Baye Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 5814617331}}
+{"location": {"lat": 43.1921595, "lon": -87.9237516}, "streets": ["West County Line Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 4602472245}}
+{"location": {"lat": 43.1953975, "lon": -87.8972865}, "streets": ["North Lake Drive", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 231846907}}
+{"location": {"lat": 43.1955777, "lon": -87.8979194}, "streets": ["North Lake Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 231834677}}
+{"location": {"lat": 43.192103, "lon": -87.9178904}, "streets": ["North Wakefield Court", "West County Line Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 472231075}}
+{"location": {"lat": 43.1921319, "lon": -87.9209373}, "streets": ["West County Line Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 5814617330}}
+{"location": {"lat": 43.1921517, "lon": -87.9230204}, "streets": ["West County Line Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 3985496743}}
+{"location": {"lat": 43.1823206, "lon": -87.8928522}, "streets": ["East Manor Circle", "North Tennyson Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196635220}}
+{"location": {"lat": 43.182336, "lon": -87.89521}, "streets": ["North Lake Drive", "East Manor Circle"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196626751}}
+{"location": {"lat": 43.1820869, "lon": -87.9023199}, "streets": ["North King Road", "East Ellsworth Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196644674}}
+{"location": {"lat": 43.1821067, "lon": -87.9036913}, "streets": ["East Ellsworth Lane", "North Rexleigh Drive"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196644672}}
+{"location": {"lat": 43.1821197, "lon": -87.9050784}, "streets": ["East Ellsworth Lane", "North Regent Road"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 6297601176}}
+{"location": {"lat": 43.1821875, "lon": -87.9154668}, "streets": ["West Autumn Path Lane", null], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196628920}}
+{"location": {"lat": 43.1823484, "lon": -87.895817}, "streets": ["North Fielding Road", "East Manor Circle"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196650214}}
+{"location": {"lat": 43.1823897, "lon": -87.8938282}, "streets": ["East Manor Circle", "North Meadowlark Lane"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196677770}}
+{"location": {"lat": 43.182309, "lon": -87.9082987}, "streets": ["West Ellsworth Lane", "North Santa Monica Boulevard"], "place": "Bayside, Wisconsin"}
+{"index": {"_index": "intersections_p2", "_type": "_doc", "_id": 196690487}}
+{"location": {"lat": 43.1824948, "lon": -87.8993202}, "streets": ["North Pelham Parkway"], "place": "Bayside, Wisconsin"}

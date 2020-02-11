@@ -1,0 +1,119 @@
+Match query
+Returns documents that match a provided text, number, date or boolean value. The provided text is analyzed before matching.
+
+The match query is the standard query for performing a full-text search, including options for fuzzy matching.
+
+curl -X GET "localhost:9200/intersections_p2/_search?pretty" -H 'Content-Type: application/json' -d'
+{
+    "query": {
+        "match": {
+            "streets": "tennyson"
+        }
+    }
+}
+'
+
+----------------------------
+
+Term query
+Returns documents that contain an exact term in a provided field.
+
+You can use the term query to find documents based on a precise value such as a price, a product ID, or a username.
+
+Avoid using the term query for text fields.
+
+By default, Elasticsearch changes the values of text fields as part of analysis. This can make finding exact matches for text field values difficult.
+
+To search text field values, use the match query instead.
+
+curl -X GET "localhost:9200/intersections_p2/_search?pretty" -H 'Content-Type: application/json' -d'
+{
+    "query": {
+        "term": {
+            "streets": {
+                "value": "Tennyson",
+                "boost": 1.0
+            }
+        }
+    }
+}
+'
+
+
+
+Range query
+Returns documents that contain terms within a provided range.
+
+Example requestedit
+The following search returns documents where the age field contains a term between 10 and 20.
+
+{
+    "query": {
+        "range" : {
+            "age" : {
+                "gte" : 10,
+                "lte" : 20,
+                "boost" : 2.0
+            }
+        }
+    }
+}
+
+---------------------------------
+
+Compound query clauses wrap other leaf or compound queries and are used to combine multiple queries in a logical fashion (such as the bool or dis_max query), or to alter their behaviour (such as the constant_score query).
+Query clauses beh
+
+{
+  "query": {
+    "bool" : {
+      "filter": {
+        "term" : { "place" : "bayside" }
+      },
+    "filter": {
+        "geo_distance": {
+            "distance": "1km",
+            "location": {
+                "lat": 43.1806231,
+                "lon": -87.8927188
+            }
+        }
+    },
+      "should" : [
+        { "term" : { "streets" : "tennyson" } }
+      ],
+      "minimum_should_match" : 1,
+      "boost" : 1.0
+    }
+  }
+}
+
+
+{
+    "query": {
+        "bool": {
+		      "should" : [
+		        { "term" : { "streets" : "tennyson" } },
+		        { "term" : { "streets" : "hermitage" } }
+		      ],
+            "filter": {
+                "geo_distance": {
+                    "distance": "1km",
+                    "location": {
+                        "lat": 43.1806231,
+                        "lon": -87.8927188
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+Disjunction max queryedit
+Returns documents matching one or more wrapped queries, called query clauses or clauses.
+
+If a returned document matches multiple query clauses, the dis_max query assigns the document the highest relevance score from any matching clause, plus a tie breaking increment for any additional matching subqueries.
+
+You can use the dis_max to search for a term in fields mapped with different boost factors.
+
