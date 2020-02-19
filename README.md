@@ -152,10 +152,14 @@ curl --location --request PUT 'http://localhost:9200/intersections_p2' \
             },
             "streets": {
                 "type": "text",
+                "term_vector": "with_positions_offsets_payloads",
+                "store" : true,
                 "analyzer": "phonetic_analyzer"
             },
             "place": {
                 "type": "text",
+                "term_vector": "with_positions_offsets_payloads",
+                "store" : true,
                 "analyzer": "phonetic_analyzer"
             }
         }
@@ -294,6 +298,9 @@ Post the bulk records to ES:
 ```
 
 curl -XPOST http://localhost:9200/intersections_p2/_bulk --header 'Content-Type: application/json' --data-binary "@bayside_wi.json"
+
+
+curl -XPOST http://localhost:9200/intersections_p2/_bulk --header 'Content-Type: application/json' --data-binary "@dallas_tx.json"
 
 AWS ES:   
 
@@ -600,3 +607,66 @@ Delete index
 curl --request DELETE 'http://localhost:9200/intersections_p2' 
 
 ```
+
+For a concise list of all indices in your cluster
+```
+curl http://localhost:9200/_aliases
+```
+or
+```
+curl 'localhost:9200/_cat/indices?v'
+```
+
+curl --location --request PUT 'https://search-intersections-p2-zoxb5qvz4i4en6vp5pg7yv44vy.us-east-1.es.amazonaws.com/intersections-p2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "settings": {
+        "index": {
+            "analysis": {
+                "analyzer": {
+                    "phonetic_analyzer": {
+                        "tokenizer": "standard",
+                        "filter": [
+                            "lowercase",
+                            "my_metaphone"
+                        ]
+                    }
+                },
+                "filter": {
+                    "my_metaphone": {
+                        "type": "phonetic",
+                        "encoder": "metaphone",
+                        "replace": false
+                    }
+                }
+            }
+        }
+    },
+    "mappings": {
+        "dynamic": "strict",
+        "properties": {
+            "location": {
+                "type": "geo_point"
+            },
+            "streets": {
+                "type": "text",
+                "analyzer": "phonetic_analyzer"
+            },
+            "place": {
+                "type": "text",
+                "analyzer": "phonetic_analyzer"
+            }
+        }
+    }
+}'
+
+
+
+python es_bulk_intersections.py --index_name='intersections-p2' --place='Bayside, Wisconsin' --bulk_file='bayside_intersections-p2.json'
+
+
+curl -XPOST https://search-intersections-p2-zoxb5qvz4i4en6vp5pg7yv44vy.us-east-1.es.amazonaws.com/intersections-p2/_bulk --header 'Content-Type: application/json' --data-binary "@bayside_intersections-p2.json"
+
+curl -XPOST https://search-intersections-p2-zoxb5qvz4i4en6vp5pg7yv44vy.us-east-1.es.amazonaws.com/intersections-p2/_bulk --header 'Content-Type: application/json' --data-binary "@chicago_intersections-p2.json"
+
+

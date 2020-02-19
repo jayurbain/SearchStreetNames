@@ -110,10 +110,67 @@ Query clauses beh
 }
 
 
-Disjunction max queryedit
+Disjunction max query
 Returns documents matching one or more wrapped queries, called query clauses or clauses.
 
 If a returned document matches multiple query clauses, the dis_max query assigns the document the highest relevance score from any matching clause, plus a tie breaking increment for any additional matching subqueries.
 
 You can use the dis_max to search for a term in fields mapped with different boost factors.
+
+--------
+
+{
+    "query": {
+        "dis_max" : {
+            "queries" : [
+                { "term" : { "streets" : "tennyson" }},
+                { "term" : { "streets" : "hermitage" }}
+            ],
+            "tie_breaker" : 0.7
+        }
+    }
+}
+
+
+{
+    "query" : {
+        "match": { "streets": "tennyson" }
+    },
+    "highlight" : {
+        "fields" : {
+            "streets" : {}
+        }
+    }
+}
+
+
+
+# the money query
+curl --location --request GET 'http://localhost:9200/intersections_p2/_search' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "query": {
+        "bool": {
+            "filter": {
+                "match": {
+                    "place": "bayside"
+                }
+            },
+            "should": [
+                {
+                    "term": {
+                        "streets": "tennyson"
+                    }
+                }
+            ],
+            "minimum_should_match": 1,
+            "boost": 1
+        }
+    },
+    "highlight": {
+        "fields": {
+            "streets": {}
+        }
+    }
+}'
 
